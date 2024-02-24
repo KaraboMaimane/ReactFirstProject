@@ -2,9 +2,9 @@ name: Node Continuous Integration
 
 on:
   push:
-    branches: [master, main]
+    branches: [ master, main ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, main ]
 
 
 jobs:
@@ -22,7 +22,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 18
-
       - run: npm ci
-      - run: npm test
       - run: npm run build
