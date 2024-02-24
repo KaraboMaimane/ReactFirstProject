@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from "./components/NewExpense/NewExpense";
 
-export interface IExnse{
+export interface IExpense{
   id: string;
   title: string;
   amount: number;
